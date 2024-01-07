@@ -1,0 +1,24 @@
+projet de conception logicielle
+fait par :
+Andrieux Brice
+Bartolone Clément
+Goudal Mathieu
+Lericheu Guillaume
+
+compilation:
+pour compiler et executer le programme vous avez deux options:
+soit utiliser make
+soit utiliser ANT
+
+dans le cas de make vous pouvez executer:
+"$ make" pour compiler et executer le programme
+"$ make test" pour compiler et executer les tests
+"$ make docs" pour compiler la javadoc
+
+dans le cas de ANT vous pouvez executer:
+"$ ant compile" pour compiler le programme	
+"$ ant run" pour compiler et executer le programme
+"$ ant test" pour compiler et executer les tests
+"$ ant clean" pour nettoyer(supprimer dist)	
+
+

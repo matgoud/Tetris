@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"controller"},{"l":"controller.StrategyIA"},{"l":"modèle"},{"l":"modèle.ChainOfResponsibility"},{"l":"modèle.Factory"},{"l":"modèle.Strategy"},{"l":"test"},{"l":"vue"}]

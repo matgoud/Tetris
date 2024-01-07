@@ -1,0 +1,51 @@
+<project name="ProjetAndrieuxBartoloneGoudalLericheux" basedir=".">
+  <description>
+    projet de méthode de conception
+  </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="dist" location="dist"/>
+  <property name="doc" location="doc"/>
+  <property name="lib" location="lib"/>
+  <path id="build-classpath">
+    <fileset dir="${lib}">
+        <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <target name="init">
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${dist}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source">
+    <!-- Compile the Java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${dist}" classpathref="build-classpath"/>
+  </target>
+
+
+    <target name="run" depends="compile">
+           <java classname="main" fork="true">
+              <classpath>
+                <pathelement location="${dist}"/>
+              </classpath>
+            </java>    
+        <echo message="Event Generator Finished."/>
+    </target>
+
+    <target name="test" depends="compile" >
+           <java classname="MainTest" fork="true" classpathref="build-classpath" >
+              <classpath>
+                <pathelement location="${dist}"/>
+              </classpath>
+            </java>    
+        <echo message="Event Generator Finished."/>
+    </target>
+
+  <target name="clean"
+        description="clean up">
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${dist}"/>
+  </target>
+</project>
