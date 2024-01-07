@@ -1,11 +1,12 @@
-projet de conception logicielle
-fait par :
+# Jeu Tetris codé en Java MVC
+
+Auteurs:
 Andrieux Brice
 Bartolone Clément
 Goudal Mathieu
 Lericheu Guillaume
 
-compilation:
+Compilation:
 pour compiler et executer le programme vous avez deux options:
 soit utiliser make
 soit utiliser ANT
